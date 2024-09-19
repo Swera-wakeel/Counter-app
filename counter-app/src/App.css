@@ -1,0 +1,69 @@
+/* Outer container to center the box */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  background-color: #f2f2f2; /* Lighter background */
+  margin: 0; /* Remove any default margins */
+}
+
+/* Small box for the counter app */
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  background-color: #a7b4b4; /* New background for the box */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a 3D effect */
+  text-align: center;
+  width: 300px;
+  height: auto; /* Make sure height adapts to content */
+}
+
+/* Counter label styling */
+h1 {
+  font-size: 1.5em;
+  color: #6e2370;
+  margin: 0;
+}
+
+/* Counter value */
+.count {
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+/* Grid layout for buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Button styling */
+.button {
+  padding: 10px 0;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #6e2370;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 80px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #4b1750;
+  transform: scale(1.05);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
